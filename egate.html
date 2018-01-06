@@ -24,11 +24,11 @@
 		
 		<div id="loginForm" class="contentElements">
 			<h3 class="header3"> Login to park</h3>
-			<label for="usernameUser">Username</label><input type="text"  class="formFields">
+			<label for="usernameUser">Username</label><input type="text" id="username" class="formFields">
 			</br>
-			<label for="passwordUser">Password</label><input type="text" class="formFields">
+			<label for="passwordUser">Password</label><input type="text" id="userpassword" class="formFields">
 			</br>
-			<button id="loginUser" class="btnLogin">Login</button><button id="cancelUser">Cancel</button>
+			<button id="loginUser" class="btnLogin" onclick="login()">Login</button><button id="cancelUser">Cancel</button>
 		</div>
 		
 		<div id="bedrijven" class="contentElements">
@@ -38,11 +38,11 @@
 		
 		<div id="loginFormBedrijven" class="contentElements">
 			<h3 class="header3"> Login bedrijven</h3>
-			<label for="userNameCompany">Username</label><input type="text" class="formFields">
+			<label for="userNameCompany">Username</label><input type="text" id="companyName" class="formFields">
 			</br>
-			<label for="passwordCompany">Password</label><input type="text" class="formFields">
+			<label for="passwordCompany">Password</label><input type="text" id="companyPassword" class="formFields">
 			</br>
-			<button id="loginUser" class="btnLogin">Login</button><button id="cancelUser">Cancel</button>
+			<button id="loginUser" class="btnLogin" onclick="companyLogin()">Login</button><button id="cancelUser">Cancel</button>
 		</div>
 		
 		<div id="btnAccountMaken" class="contentElements">
@@ -55,59 +55,11 @@
 			</br>
 			<button id="loginUser" class="btnLogin">OK</button><button id="cancelUser">Cancel</button>
 		</div>
+	<!-- scripts -->
+	<script type="text/javascript" src="javascript/Eelkejavascript.js"></script>
+	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
+	<script typ="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
+
 </body>
 
-<script>
-		var btnNuparkeren = document.getElementById('nuParkeren');
-		var btnAccountB = document.getElementById('accountBedrijven');
-		var btnOverOns = document.getElementById('overOns');
-		var btnBedrijfLog = document.getElementById('loginBedrijf');
-		var btnAccountM = document.getElementById('maakAccount');
-		var userLogin = document.getElementById('loginUser');
-
-		btnNuparkeren.style.cursor = 'pointer';
-		btnNuparkeren.onclick = function(){
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("loginForm").style.display = "block";
-			document.getElementById("btnAccountMaken").style.display = "none";
-		};
-		
-		btnAccountB.style.cursor = 'pointer';
-		btnAccountB.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "block";
-			document.getElementById("btnAccountMaken").style.display = "none";
-		};
-		
-		btnOverOns.style.cursor = 'pointer';
-		btnOverOns.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "none";
-		};
-		
-		btnBedrijfLog.style.cursor = 'pointer';
-		btnBedrijfLog.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "block";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "none";
-		};
-		
-		btnAccountM.style.cursor = 'pointer';
-		btnAccountM.onclick = function(){
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "block";
-		};
-		/*
-		userLogin.onclick = function(){
-			document.getElementById("loginUser").style. = red;
-		}
-		*/
-</script>
 </html>
