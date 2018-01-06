@@ -25,7 +25,7 @@ function login() {
 	if (username == admin.username && password == admin.password) {
 		getAccess();
 	} else {
-		document.getElementById("warning").innerHTML = "The username and/or password is not correct";
+		alert("The username and/or password is not correct");
 	}
 }
 
@@ -42,7 +42,7 @@ function companyLogin() {
 	if (username == demoCompany.companyname && password == demoCompany.password) {
 		getCompanyAccess();
 	} else {
-		document.getElementById("companyWarning").innerHTML = "The username and/or password is not correct";
+		alert("The username and/or password is not correct");
 	}
 }
 
