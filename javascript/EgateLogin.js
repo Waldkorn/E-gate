@@ -19,8 +19,8 @@ var demoCompany = new Company("CodeGorilla", "test");
 //functie die controleert of de logingegevens kloppen
 function login() {
 
-	var username = document.getElementById("fullname").value;
-	var password = document.getElementById("password").value;
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("userpassword").value;
 
 	if (username == admin.username && password == admin.password) {
 		getAccess();
