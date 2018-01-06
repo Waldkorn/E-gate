@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<title>E-Gate</title>
+	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+	<!-- <script src="js/"></script>*/-->
+</head>
+
+<body>	
+		<div class="title">
+			<h1><b>E-Gate</b></h1>
+		</div>
+		
+		<div class="buttonGroup">
+			<button id="nuParkeren">Nu Parkeren</button>
+			<button id="accountBedrijven">Bedrijven</button>
+			<button id="overOns">Over ons</button>
+		</div>
+		
+		<div id="loginForm">
+			<h3 class="header3"> Login automobilisten</h3>
+			<label for="fullname">Gebruikersnaam</label><input type="text" id="fullname" class="formFields">
+			<label for="phone">Wachtwoord</label><input type="text" id="phone" class="formFields">
+			<button id="loginUser">Toevoegen</button><button id="cancelUser">Cancel</button>
+		</div>
+		
+		<div id="bedrijven">
+			<h3 class="header3"> Login als u al een account heeft. Zo niet maak dan een account aan.</h3>
+			<button id="loginBedrijf">Login</button><button id="cancelBedrijf">Maak account aan</button>
+		</div>
+		
+		<div id="loginFormBedrijven">
+			<h3 class="header3"> Login bedrijven</h3>
+			<label for="fullname">Gebruikersnaam</label><input type="text" id="fullname" class="formFields">
+			<label for="phone">Wachtwoord</label><input type="text" id="phone" class="formFields">
+			<button id="loginUser">Toevoegen</button><button id="cancelUser">Cancel</button>
+		</div>
+</body>
+<script>
+		document.getElementById("nuParkeren").addEventListener("click", function(){
+			document.getElementById("loginFormBedrijven").style.display = "none";
+			document.getElementById("bedrijven").style.display = "none";
+			document.getElementById("loginForm").style.display = "block";
+		});
+		
+		document.getElementById("accountBedrijven").addEventListener("click", function(){
+			document.getElementById("loginForm").style.display = "none";
+			document.getElementById("loginFormBedrijven").style.display = "none";
+			document.getElementById("bedrijven").style.display = "block";
+		});
+		
+		document.getElementById("loginBedrijf").addEventListener("click", function(){
+			document.getElementById("loginForm").style.display = "none";
+			document.getElementById("loginFormBedrijven").style.display = "block";
+			document.getElementById("bedrijven").style.display = "none";
+		});
+</script>
+</html>
