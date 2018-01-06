@@ -1,4 +1,11 @@
 
+Wil je in settings deze key toevoegen (by ssh)
+	
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDxR9toMIvNitN/9xuzlM0IKjz6mKAqm06QnOvWFzxF+tBxm4l0hWxIi6PSblrj1UemVlJYQfQO15bAVdjORDvaRNREnMAHEuHhk2OOJ5TGtTCLt1VORWRYfn2A9X8IFWiWZnNTMJjKdGuoSugaUzRHWgKkIfwrxuY6G44QQhWD9jOktyKdGOWzHUwhjlPfrnU4mkyiBCi+Wi3bFGBoZmVFNdW177D6lN+O89Y4WkScyfWpItMS64gJhFEGAV8c3wJUKjkDoJ+Nhh+1Wm4nFcfd8g6aCIFmkZGsznfqJq2MmYAQnKsIMpBFILlPgwT7PvMYqNfH5sAXoLe9i8yX2dzh Esmeralda@Esmo
+
+
+
+
 window.onload function(){
 	
 	var usernameForm = esmeralda;  // document.getElementByID(username);
