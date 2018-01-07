@@ -33,14 +33,14 @@ if(isset($_POST['submit']))
   //Validate the form 
   if(empty($firstname) || empty($lastname) || empty($email_from) || empty($message)) 
   {
-      echo ('<script type="text/javascript">alert("Please fill in all the form fields!"); window.location.href = "../index.php#contact";</script>');
+      echo ('<script type="text/javascript">alert("Please fill in all the form fields!"); window.location.href = "./egate.html";</script>');
   }
   else if(IsInjected($email_from))
   {
       echo "IsInjected stuck";
       echo ('<script type="text/javascript">');
       echo ('alert("Please enter a valid e-mail adress!");');
-      echo ('window.location.href = "../index.php#contact";');
+      echo ('window.location.href = "./egate.html";');
       echo ('</script>');
   }
   else 
