@@ -6,7 +6,7 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<title>E-gate</title>
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Play" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css//styleMobile.css">
+	<link rel="stylesheet" type="text/css" href="css/styleMobile.css">
 
 </head>
 <body>
@@ -38,10 +38,10 @@
 		<div class="content">
 			<div id="loginForm" class="form">
 				<h1>Login automobilisten</h1>
-				<label for="fullname" class="label">Username</label><input type="text" id="fullname" class="formFields">
-				<label for="phone" class="label">Password</label><input type="password" id="phone" class="formFields">
+				<label for="username" class="label">Username</label><input type="text" id="username" class="formFields">
+				<label for="userpassword" class="label">Password</label><input type="password" id="userpassword" class="formFields">
 				<button id="cancelUser" class="buttonForm">Cancel</button>
-				<button id="loginUser" class="buttonForm">Log in</button>
+				<button id="loginUser" class="buttonForm" onClick="login()">Log in</button>
 			</div>
 			
 		<!-- WELCOME PAGE FOR COMPANIES  -->	
@@ -58,10 +58,10 @@
 		<!-- LOGIN PAGE FOR COMPAGNIES  -->
 			<div id="loginFormBedrijven">
 				<h1>Login Companies</h1>
-				<label for="fullname">Username</label><input type="text" id="fullname" class="formFields">
-				<label for="phone">Password</label><input type="text" id="phone" class="formFields">
+				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
+				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
 				<button id="cancelUser" class="buttonForm">Cancel</button>
-				<button id="loginUser" class="buttonForm">Add</button>
+				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Add</button>
 			</div>
 		
 
