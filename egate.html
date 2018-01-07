@@ -50,9 +50,9 @@
 			</br>
 			<label for="User_city">City</label><input type="text" id="User_city" class="formFields">
 			</br>
-			<label for="User_Password"></label><input type="text" id="User_Password" class="formFields">
+			<label for="User_Password">Password</label><input type="text" id="User_Password" class="formFields">
 			</br>
-			<button id="newUser" class="btnLogin buttonForm">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
+			<button id="newUser" class="btnLogin buttonForm" onClick="navigate('freeSpaces')">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
 		</div>
 		
 		<!-- LOGIN PAGE FOR CAR USERS  -->
@@ -61,8 +61,8 @@
 				<h1>Login automobilisten</h1>
 				<label for="username" class="label">Username</label><input type="text" id="username" class="formFields">
 				<label for="userpassword" class="label">Password</label><input type="password" id="userpassword" class="formFields">
-				<button id="cancelUser" class="buttonForm">Cancel</button>
-				<button id="loginUser" class="buttonForm" onClick="navigate('freeSpaces')">Log in</button>
+				<button id="loginUser" class="buttonForm" onClick="login()">Log in</button>
+				<button id="register" class="buttonForm" onClick="navigate('accountMaken')">Register</button>
 			</div>
 		
 			
@@ -70,7 +70,7 @@
 
 		<div id="freeSpaces" class="freespacesTable content">
 			<h1>Parkingspaces in your vicinity</h1>
-			<a href="#"><div class="button">Use my location to find a parking spot!</div></a>
+			
 				<div id="parkeerPlaatsen">
 				<!-- This is where the free spaces will show up in a JS loop -->
 				</div>	
@@ -98,7 +98,7 @@
 			</br>
 			<label for="companyPassword">Password</label><input type="text" class="formFields">
 			</br>
-			<button id="loginUser" class="btnLogin buttonForm">OK</button><button id="cancelUser" class="buttonForm">Cancel</button>
+			<button id="loginUser" class="btnLogin buttonForm">OK</button>
 		</div>
 			
 		<!-- LOGIN PAGE FOR COMPAGNIES  -->
@@ -106,7 +106,6 @@
 				<h1>Login Companies</h1>
 				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
 				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
-				<button id="cancelUser" class="buttonForm">Cancel</button>
 				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Add</button>
 			</div>
 		
