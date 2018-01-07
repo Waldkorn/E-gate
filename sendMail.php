@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
   else 
   { 
     $email_to = "esmeraldatijhoff@yahoo.com";
-    $email_subject = "New message from my Portfolio website";
+    $email_subject = "New message from my eGate website";
     $email_body = "$firstname $lastname has send you a message.\n".
          "Please send a respons to $email_from.\n".
          "Here is the message.\n\n".
@@ -61,13 +61,13 @@ if(isset($_POST['submit']))
       // empty the form
       $_POST=array();
       
-      echo ('<script type="text/javascript">alert("Your message has been send!"); window.location.href = "../index.php";</script>');
+      echo ('<script type="text/javascript">alert("Your message has been send!"); window.location.href = "./egate.html";</script>');
     }  
   } 
 
   else 
   {
     //This page should not be accessed directly. Need to submit the form.
-    echo ('<script type="text/javascript">alert("Error, you need to fill in the contact form.");   window.location.href = "../index.php#contact";</script>');
+    echo ('<script type="text/javascript">alert("Error, you need to fill in the contact form.");   window.location.href = "./egate.html";</script>');
   }
 ?>
