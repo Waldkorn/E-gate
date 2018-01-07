@@ -18,16 +18,15 @@
 		
 		<nav class="buttonGroup">
 			<ul>
-				<li><button id="nuParkeren" class="menu"><span>Park Now!</span></button></li>
-				<li><button id="accountBedrijven" class="menu"><span>Companies</span></button></li>
-				<li class="dropmenu"><button id="overOns" class="menu" style="width:90px;"><span>Over ons</span></button>
+				<li><button id="nuParkeren" class="menu" onClick="navigate('loginForm')"><span>Park Now!</span></button></li>
+				<li><button id="accountBedrijven" class="menu" onClick="navigate('companyWelcome')"><span>Companies</span></button></li>
+				<li class="dropmenu"><button id="overOns" class="menu" style="width:90px;" onClick="navigate('about')"><span>Over ons</span></button>
 					<ul>
 						<li class="drop">
-						<button id="products" class="menu drop"><span>Tutorial</span></button>
+						<button id="products" class="menu drop" onClick="navigate('tutorial')"><span>Tutorial</span></button>
 						</li>
 						<li class="drop">
-						<button id="contact" class="menu drop"><span>Contact</span></button>
-						
+						<button class="menu drop" onClick="navigate('contact')"><span>Contact</span></button>
 						</li>
 					</ul>
 				</li>
@@ -35,8 +34,8 @@
 		</nav>
 		
 		<!-- LOGIN PAGE FOR CAR USERS  -->
-		<div class="content">
-			<div id="loginForm" class="form">
+		<div>
+			<div id="loginForm" class="content" class="form">
 				<h1>Login automobilisten</h1>
 				<label for="username" class="label">Username</label><input type="text" id="username" class="formFields">
 				<label for="userpassword" class="label">Password</label><input type="password" id="userpassword" class="formFields">
@@ -45,18 +44,18 @@
 			</div>
 			
 		<!-- WELCOME PAGE FOR COMPANIES  -->	
-			<div id="bedrijven">
+			<div id="companyWelcome" class="content">
 				<h1>Join us!</h1>
 				<div class="text">
 					<p>Happy employees deliver a better job. Join us today to enhance the comfort and parking ease for your guests and co-workers!</p>
 					<p>Start earning by renting out your empty parking spaces any time you want!</p>
 				</div>
-				<button id="loginBedrijf" class="buttonContent">Log in</button>
-				<button id="newCompany" class="buttonContent">Make an account</button>
+				<button id="loginBedrijf" class="buttonContent" onClick="navigate('loginFormBedrijven')">Log in</button>
+				<button id="newCompany" class="buttonContent" onClick="navigate('btnAccountMaken')">Make an account</button>
 			</div>
 			
 		<!-- LOGIN PAGE FOR COMPAGNIES  -->
-			<div id="loginFormBedrijven">
+			<div id="loginFormBedrijven" class="content">
 				<h1>Login Companies</h1>
 				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
 				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
@@ -67,7 +66,7 @@
 
 
 		<!-- MAKE AN ACOUNT FOR COMPAGNIES  -->
-		<div id="btnAccountMaken" class="contentElements">
+		<div id="btnAccountMaken" class="content">
 			<h1> Please fill out your information</h1>
 			<label for="bedrijfsnaam">Company name</label><input type="text" id="bedrijfsnaam" class="formFields">
 			</br>
@@ -79,7 +78,7 @@
 		</div>
 
 		<!-- MAKE AN ACOUNT FOR CARUSER  -->
-		<div id="btnAccountMaken">
+		<div id="accountMaken" class="content">
 			<h1> Please fill out your information</h1>
 			<label for="User_usersname">User name</label><input type="text" id="bedrijfsnaam" class="formFields">
 			</br>
@@ -101,7 +100,7 @@
 		</div>
 
 
-		<div id="about">
+		<div id="about" class="content">
 			<h1>About us!</h1>
 			<div class="text">
 				<p>E-Gate is a Tech-Team that specialises in the development of modern web Applications used in the regulation of access into restricted spaces and environments such as public garages and buildings. The team came together in January 2018 under the auspices of CodeGorilla at the Big Building in Groningen. With the technical supervision and institutional support of CodeGorilla, this multipurpose web application was first developed to resolve the common problems of congestion and uncertainty faced by most modern garages.
@@ -109,7 +108,7 @@
 			</div>
 		</div>
 
-		<div id="tutorial">
+		<div id="tutorial" class="content">
 			<h1>How the E-Gate Application Works</h1>
 			<div class="text">
 				<p>You first have to login at the website of E-Gate with your details and a password. After logging in, you will receive a code on your mobile telephone together with information on the garage and the number of parking spaces that are available. With this code in your mobile telephone you can get access to the restricted garage and the automatic opening of the gate.
@@ -117,7 +116,7 @@
 			</div>
 		</div>
 
-		<div id="contact">
+		<div id="contact" class="content">
 			<h1>Contact us</h1>
 	
 				<p>E-Gate is located in Groningen, the Netherlands. For any information or comments, please contact us at:
@@ -141,7 +140,7 @@
 </body>
 
 <!-- scripts -->
-	<script type="text/javascript" src="javascript/Eelkejavascript.js"></script>
+	<script type="text/javascript" src="javascript/EgateNavigation.js"></script>
 	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
 	<script typ="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
 
