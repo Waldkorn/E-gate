@@ -5,19 +5,21 @@
 <style>
   body {
     font-family   : Arial, Helvetica, sans-serif;
-    background: #006666 url(../matrix.jpg);     
+    /* background: #006666 url(../matrix.jpg);  */
+    background-color: burlywood;  
     color: #FFFF00;
   }
 </style>
 <script src= "javascript/slagboom.js"></script>
 
-<body onLoad ="LaadSlagBoom()">
-<h1>Sesam</h1>
+<body onLoad ="OpenSlagBoom()">
+	<br><br><br>
+<!-- <h1>Sesam</h1> -->
 <center>
   <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;">
   </canvas>          
  <form name = "controleknoppen" style="clear: both">     
-   <button class="OpenSlagboom" name="OpenOpenSlagBoom" value="1" type="button" onClick="JavaScript: OpenSlagBoom();">Open SlagBoom</button>
+   <button class="OpenSlagboom" name="OpenOpenSlagBoom" value="1" type="button" onClick="JavaScript: OpenSlagBoom();" style="display:none;">Open SlagBoom</button>
 
 
 </center>   
