@@ -37,7 +37,7 @@
 		<!-- MAKE AN ACOUNT FOR CARUSER  -->
 		<div id="accountMaken" class="content">
 			<h1> Please fill out your information</h1>
-			<label for="User_usersname">User name</label><input type="text" id="bedrijfsnaam" class="formFields">
+			<label for="User_usersname">User name</label><input type="text" id="User_username" class="formFields">
 			</br>
 			<label for="User_firstname">First name</label><input type="text" id="User_firstname" class="formFields">
 			</br>
@@ -107,9 +107,9 @@
 			</br>
 			<label for="parkeerSysteem">Parkingsystem</label><input type="text" id="parkeerSysteem" class="formFields">
 			</br>
-			<label for="companyPassword">Password</label><input type="password" class="formFields">
+			<label for="companyPassword">Password</label><input type="password" class="formFields" id="companyFormPassword">
 			</br>
-			<button id="makeNewCompany" class="btnLogin buttonForm">Make my account</button>
+			<button id="makeNewCompany" class="btnLogin buttonForm" onClick="addCompanyForm()">Make my account</button>
 		</div>
 			
 		<!-- LOGIN PAGE FOR COMPAGNIES  -->
