@@ -3,7 +3,6 @@ function login() {
 
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("userpassword").value;
-
 	var userIndex = getIndexOfUser(username);
 
 	if (userIndex == undefined || password !== users[userIndex].password) {
