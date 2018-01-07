@@ -37,7 +37,7 @@ function addUser(username, firstname, lastname, email, address, zipcode, city, p
 
 //addUser functie voor de onclick zodat de html niet cluttered raakt.
 function addPersonForm() {
-	var username = document.getElementById("username").value;
+	var username = document.getElementById("User_username").value;
 	var firstname = document.getElementById("User_firstname").value;
 	var lastname = document.getElementById("User_lastname").value;
 	var email = document.getElementById("User_email").value;

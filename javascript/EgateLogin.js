@@ -1,3 +1,5 @@
+var loggedInCompany = -1;
+
 //functie die controleert of de logingegevens kloppen
 function login() {
 
@@ -9,6 +11,8 @@ function login() {
 		alert("The username and/or password is not correct");
 	} else {
 		navigate("freeSpaces");
+		document.getElementById("username").value = "";
+		document.getElementById("userpassword").value = "";
 	}
 }
 
@@ -27,12 +31,11 @@ function companyLogin() {
 
 	var companyIndex = getIndexOfCompany(username);
 
-	console.log(companyIndex);
-
 	if (companyIndex == undefined || password !== companies[companyIndex].password) {
 		alert("The username and/or password is not correct");
 	} else {
-		console.log("acces granted");
+		loggedInCompany = companyIndex;
+		navigate("profileCompany");
 	}
 }
 
