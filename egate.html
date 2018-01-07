@@ -33,14 +33,15 @@
 			</ul>
 		</nav>
 
+		
 		<!-- MAKE AN ACOUNT FOR CARUSER  -->
 		<div id="accountMaken" class="content">
 			<h1> Please fill out your information</h1>
-			<label for="User_usersname">User name</label><input type="text" id="bedrijfsnaam" class="formFields">
+			<label for="User_usersname">User name</label><input type="text" id="username" class="formFields">
 			</br>
 			<label for="User_firstname">First name</label><input type="text" id="User_firstname" class="formFields">
 			</br>
-			<label for="User_lasttname">Last name</label><input type="text" id="User_lasttname" class="formFields">
+			<label for="User_lasttname">Last name</label><input type="text" id="User_lastname" class="formFields">
 			</br>
 			<label for="User_email">Email address</label><input type="text" id="User_email" class="formFields">
 			</br>
@@ -50,9 +51,9 @@
 			</br>
 			<label for="User_city">City</label><input type="text" id="User_city" class="formFields">
 			</br>
-			<label for="User_Password">Password</label><input type="password" id="User_Password" class="formFields">
+			<label for="User_Password">Password</label><input type="text" id="User_password" class="formFields">
 			</br>
-			<button id="newUser" class="btnLogin buttonForm" onClick="navigate('freeSpaces')">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
+			<button id="newUser" class="btnLogin buttonForm" onClick="addPersonForm()">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
 		</div>
 		
 		<!-- LOGIN PAGE FOR CAR USERS  -->
@@ -76,7 +77,7 @@
 				</div>	
 		</div>	
 
-		<!-- RESERVE A CHOOSEN PARKING PLACE -->
+		<!-- RESERVE A CHOSEN PARKING PLACE -->
 		<div id="reserveer" class="freespacesTable content">
 				<h1>Your reservation was succesful!</h1>
 	
@@ -94,8 +95,8 @@
 					<p>Happy employees deliver a better job. Join us today to enhance the comfort and parking ease for your guests and co-workers!</p>
 					<p>Start earning by renting out your empty parking spaces any time you want!</p>
 				</div>
-				<button id="loginBedrijf" class="buttonContent" onClick="navigate('loginFormBedrijven')">Login</button>
-				<button id="newCompany" class="buttonContent" onClick="navigate('btnAccountMaken')">Make my account</button>
+				<button id="loginBedrijf" class="buttonContent" onClick="navigate('loginFormBedrijven')">Log in</button>
+				<button id="newCompany" class="buttonContent" onClick="navigate('btnAccountMaken')">Make an account</button>
 			</div>
 			
 		<!-- MAKE AN ACOUNT FOR COMPAGNIES  -->
@@ -105,9 +106,9 @@
 			</br>
 			<label for="parkeerSysteem">Parkingsystem</label><input type="text" id="parkeerSysteem" class="formFields">
 			</br>
-			<label for="companyPassword">Password</label><input type="password" class="formFields">
+			<label for="companyPassword">Password</label><input type="text" id="companyFormPassword" class="formFields">
 			</br>
-			<button id="makeNewCompany" class="btnLogin buttonForm">Make my account</button>
+			<button id="loginUser" class="btnLogin buttonForm" onClick="addCompanyForm()">OK</button>
 		</div>
 			
 		<!-- LOGIN PAGE FOR COMPAGNIES  -->
@@ -154,6 +155,7 @@
 			  <label for="message">Your message</label>
 			  <textarea id="message" name="message" placeholder="Your message" style="height:200px;"></textarea>
 			  <input type="submit" name="submit" class="buttonContent" value="submit">
+
 			</form>
 	
 		</div>
@@ -162,9 +164,10 @@
 </body>
 
 <!-- scripts -->
+	<script type="text/javascript" src="javascript/EgateLocalStorage.js"></script>
 	<script type="text/javascript" src="javascript/EgateNavigation.js"></script>
 	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
-	<script typ="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
-	<script typ="text/javascript" src="javascript/EgateQRcode.js"></script>
+	<script type="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
+  <script typ="text/javascript" src="javascript/EgateQRcode.js"></script>
 
 </html>
