@@ -33,50 +33,6 @@
 			</ul>
 		</nav>
 		
-		<!-- LOGIN PAGE FOR CAR USERS  -->
-		<div>
-			<div id="loginForm" class="content" class="form">
-				<h1>Login automobilisten</h1>
-				<label for="username" class="label">Username</label><input type="text" id="username" class="formFields">
-				<label for="userpassword" class="label">Password</label><input type="password" id="userpassword" class="formFields">
-				<button id="cancelUser" class="buttonForm">Cancel</button>
-				<button id="loginUser" class="buttonForm" onClick="login()">Log in</button>
-			</div>
-			
-		<!-- WELCOME PAGE FOR COMPANIES  -->	
-			<div id="companyWelcome" class="content">
-				<h1>Join us!</h1>
-				<div class="text">
-					<p>Happy employees deliver a better job. Join us today to enhance the comfort and parking ease for your guests and co-workers!</p>
-					<p>Start earning by renting out your empty parking spaces any time you want!</p>
-				</div>
-				<button id="loginBedrijf" class="buttonContent" onClick="navigate('loginFormBedrijven')">Log in</button>
-				<button id="newCompany" class="buttonContent" onClick="navigate('btnAccountMaken')">Make an account</button>
-			</div>
-			
-		<!-- LOGIN PAGE FOR COMPAGNIES  -->
-			<div id="loginFormBedrijven" class="content">
-				<h1>Login Companies</h1>
-				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
-				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
-				<button id="cancelUser" class="buttonForm">Cancel</button>
-				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Add</button>
-			</div>
-		
-
-
-		<!-- MAKE AN ACOUNT FOR COMPAGNIES  -->
-		<div id="btnAccountMaken" class="content">
-			<h1> Please fill out your information</h1>
-			<label for="bedrijfsnaam">Company name</label><input type="text" id="bedrijfsnaam" class="formFields">
-			</br>
-			<label for="parkeerSysteem">Parkingsystem</label><input type="text" id="parkeerSysteem" class="formFields">
-			</br>
-			<label for="companyPassword">Password</label><input type="text" class="formFields">
-			</br>
-			<button id="loginUser" class="btnLogin buttonForm">OK</button><button id="cancelUser" class="buttonForm">Cancel</button>
-		</div>
-
 		<!-- MAKE AN ACOUNT FOR CARUSER  -->
 		<div id="accountMaken" class="content">
 			<h1> Please fill out your information</h1>
@@ -98,7 +54,65 @@
 			</br>
 			<button id="newUser" class="btnLogin buttonForm">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
 		</div>
+		
+		<!-- LOGIN PAGE FOR CAR USERS  -->
+		<div>
+			<div id="loginForm" class="content" class="form">
+				<h1>Login automobilisten</h1>
+				<label for="username" class="label">Username</label><input type="text" id="username" class="formFields">
+				<label for="userpassword" class="label">Password</label><input type="password" id="userpassword" class="formFields">
+				<button id="cancelUser" class="buttonForm">Cancel</button>
+				<button id="loginUser" class="buttonForm" onClick="login()">Log in</button>
+			</div>
+		
+			
+		<!-- AFTER LOGIN AND GET LOCATION SHOW PARKINGSPACED FOR CAR USERS -->
 
+		<div id="freeSpaces" class="freespacesTable">
+			<h1>Parkingspaces in your vicinity</h1>
+			<a href="#"><div class="button">Use my location to find a parking spot!</div></a>
+				<div id="parkeerPlaatsen">
+				<!-- This is where the free spaces will show up in a JS loop -->
+				</div>	
+		</div>	
+			
+			
+			
+		<!-- WELCOME PAGE FOR COMPANIES  -->	
+			<div id="companyWelcome" class="content">
+				<h1>Join us!</h1>
+				<div class="text">
+					<p>Happy employees deliver a better job. Join us today to enhance the comfort and parking ease for your guests and co-workers!</p>
+					<p>Start earning by renting out your empty parking spaces any time you want!</p>
+				</div>
+				<button id="loginBedrijf" class="buttonContent" onClick="navigate('loginFormBedrijven')">Log in</button>
+				<button id="newCompany" class="buttonContent" onClick="navigate('btnAccountMaken')">Make an account</button>
+			</div>
+			
+		<!-- MAKE AN ACOUNT FOR COMPAGNIES  -->
+		<div id="btnAccountMaken" class="content">
+			<h1> Please fill out your information</h1>
+			<label for="bedrijfsnaam">Company name</label><input type="text" id="bedrijfsnaam" class="formFields">
+			</br>
+			<label for="parkeerSysteem">Parkingsystem</label><input type="text" id="parkeerSysteem" class="formFields">
+			</br>
+			<label for="companyPassword">Password</label><input type="text" class="formFields">
+			</br>
+			<button id="loginUser" class="btnLogin buttonForm">OK</button><button id="cancelUser" class="buttonForm">Cancel</button>
+		</div>
+			
+		<!-- LOGIN PAGE FOR COMPAGNIES  -->
+			<div id="loginFormBedrijven" class="content">
+				<h1>Login Companies</h1>
+				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
+				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
+				<button id="cancelUser" class="buttonForm">Cancel</button>
+				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Add</button>
+			</div>
+		
+
+		
+		<!-- SHOW OTHER PAGES  FROM MAIN MENU-->
 
 		<div id="about" class="content">
 			<h1>About us!</h1>
@@ -119,21 +133,21 @@
 		<div id="contact" class="content">
 			<h1>Contact us</h1>
 	
-				<p>E-Gate is located in Groningen, the Netherlands. For any information or comments, please contact us at:
-					<!-- Contact formulier  -->
+			<p>E-Gate is located in Groningen, the Netherlands. For any information or comments, please contact us at:</p>
+		<!-- Contact formulier  -->
  
-                <form name="contactform" enctype="multipart/form-data" method="post" action="./include/sendMail.php">
-                  <label for="firstname">First Name</label>
-                  <input type="text" id="firstname" name="firstname" placeholder="Your first name"/>
-                  <label for="lastname">Last Name</label>
-                  <input type="text" id="lastname" name="lastname" placeholder="Your last name"/>
-                  <label for="email">E-mail address</label>
-                  <input type="text" id="email" name="email" placeholder="Your e-mail adress"/>      
-                  <label for="message">Your message</label>
-                  <textarea id="message" name="message" placeholder="Your message" style="height:200px;"></textarea>
-                  <input type="submit" name="submit" value="submit">
-                </form>
-				</p>
+			<form name="contactform" enctype="multipart/form-data" method="post" action="./include/sendMail.php">
+			  <label for="firstname">First Name</label>
+			  <input type="text" id="firstname" name="firstname" placeholder="Your first name"/>
+			  <label for="lastname">Last Name</label>
+			  <input type="text" id="lastname" name="lastname" placeholder="Your last name"/>
+			  <label for="email">E-mail address</label>
+			  <input type="text" id="email" name="email" placeholder="Your e-mail adress"/>      
+			  <label for="message">Your message</label>
+			  <textarea id="message" name="message" placeholder="Your message" style="height:200px;"></textarea>
+			  <input type="submit" name="submit" value="submit">
+			</form>
+	
 		</div>
 
 
