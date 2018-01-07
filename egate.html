@@ -139,73 +139,10 @@
 
 
 </body>
-<script>
-		var btnNuparkeren = document.getElementById('nuParkeren');
-		var btnAccountB = document.getElementById('accountBedrijven');
-		var btnOverOns = document.getElementById('overOns');
-		var btnBedrijfLog = document.getElementById('loginBedrijf');
-		var btnAccountM = document.getElementById('newCompany');
-		var userLogin = document.getElementById('loginUser');
-		var btnAccountUser = document.getElementById('overOns');
 
-		btnNuparkeren.style.cursor = 'pointer';
-		btnNuparkeren.onclick = function(){
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("loginForm").style.display = "block";
-			document.getElementById("btnAccountMaken").style.display = "none";
-			document.getElementById("about").style.display = "none";
-		};
-		
-		btnAccountB.style.cursor = 'pointer';
-		btnAccountB.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "block";
-			document.getElementById("btnAccountMaken").style.display = "none";
-			document.getElementById("about").style.display = "none";
-		};
-		
-		btnOverOns.style.cursor = 'pointer';
-		btnOverOns.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "none";
-			document.getElementById("about").style.display = "block";
-		};
-		
-		btnBedrijfLog.style.cursor = 'pointer';
-		btnBedrijfLog.onclick = function(){
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("loginFormBedrijven").style.display = "block";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "none";
-			document.getElementById("about").style.display = "none";
-		};
-		
-		btnAccountM.style.cursor = 'pointer';
-		btnAccountM.onclick = function(){
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("about").style.display = "block";
-			document.getElementById("about").style.display = "none";
-		};
-
-		btnAccountM.style.cursor = 'pointer';
-		btnAccountUser.onclick = function(){
-			document.getElementById("loginFormBedrijven").style.display = "none";
-			document.getElementById("bedrijven").style.display = "none";
-			document.getElementById("loginForm").style.display = "none";
-			document.getElementById("btnAccountMaken").style.display = "none";
-			document.getElementById("about").style.display = "block";
-		};
-		/*
-		userLogin.onclick = function(){
-			document.getElementById("loginUser").style. = red;
-		}
-		*/
-</script>
+<!-- scripts -->
+	<script type="text/javascript" src="javascript/Eelkejavascript.js"></script>
+	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
+	<script typ="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
 
 </html>
