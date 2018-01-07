@@ -6,7 +6,8 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<title>E-gate</title>
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Play" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/styleMobile.css">
+	<link rel="stylesheet" type="text/css" href="./css/styleMobile.css">
+	<link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 
 </head>
 <body>
@@ -40,7 +41,7 @@
 			</br>
 			<label for="User_firstname">First name</label><input type="text" id="User_firstname" class="formFields">
 			</br>
-			<label for="User_lasttname">Last name</label><input type="text" id="User_lasttname" class="formFields">
+			<label for="User_lastname">Last name</label><input type="text" id="User_lastname" class="formFields">
 			</br>
 			<label for="User_email">Email address</label><input type="text" id="User_email" class="formFields">
 			</br>
@@ -50,7 +51,7 @@
 			</br>
 			<label for="User_city">City</label><input type="text" id="User_city" class="formFields">
 			</br>
-			<label for="User_Password">Password</label><input type="password" id="User_Password" class="formFields">
+			<label for="User_password">Password</label><input type="password" id="User_password" class="formFields">
 			</br>
 			<button id="newUser" class="btnLogin buttonForm" onClick="addPersonForm()">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
 		</div>
@@ -119,6 +120,42 @@
 				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Login</button>
 			</div>
 		
+			<!-- Profile page FOR COMPAGNIES  -->
+			<div id="profileCompany" class="content">
+				<h1>Your company profile</h1>
+				<label for="CompagnyName">Company name</label>
+				<label for="username">Username</label>
+				<label for="addressCompagny">Address</label>
+				<label for="zipcode">Zipcode</label>
+				<label for="city">City</label>
+				<label for="country">Country</label>
+				<label for="phone">phone</label>
+				<label for="email">email</label>
+				<label for="password">Password</label>
+				<button id="loginUser" class="buttonForm" onClick="companyedit()">Edit</button>
+
+				<h1>Your Parkingspaces</h1>
+				<label for="amountPlaces">Amount of available places</label>
+				<label for="costs">Costs per hour</label>
+				<label for="times">Openintimes</label>
+				<button id="loginUser" class="buttonForm" onClick="companyPlacesedit()">Edit</button>
+
+				<h1>Your Employees</h1>
+				<label for="employees">Show my empoyees</label>
+				<label for="nemEmployee">Add a new employee</label>
+				<button id="loginUser" class="buttonForm" onClick="companyPEmployeesedit()">Edit</button>
+				
+				<h1>Your guests</h1>
+				<label for="quest">Get code for a quest</label>
+
+				<h1>Your profit</h1>
+				<label for="income">Show your total amount of income</label>
+				<label for="statistics">Show your statistics</label>
+
+			</div>
+
+
+
 
 		
 		<!-- SHOW OTHER PAGES  FROM MAIN MENU-->
@@ -167,5 +204,6 @@
 	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
 	<script type="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
   <script typ="text/javascript" src="javascript/EgateQRcode.js"></script>
+  <script typ="text/javascript" src="javascript/EgateLocalStorage.js"></script>
 
 </html>
