@@ -1,47 +1,370 @@
-body {
-    margin:0px;
-	background: burlywood;
-}
+@media only screen and (min-width: 501px) {
+    
+/*******COLORS************
+achtergrond E0CCA6
+geel: E79A00;
+donkerbruin 201500
+white and FFFFFE
+*****************************/
+
+/***************************
+TITILS font-family: 'Play', sans-serif;
+body: font-family: 'Hind Siliguri', sans-serif;
+*/
 
 
+    body {
+        background-color: #fffffe;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
 
-.title {
+    h1{
+    font-family: 'Play', sans-serif;
+    display: block;
+    font-size: 1.2em;
+    clear: left;
+    }
+
+    h2{
+      font-family: 'Play', sans-serif;
+      display: block;
+    }
+
+    h3{
+      font-family: 'Play', sans-serif;
+      display: block;
+    }
+
+    p{
+      font-family: 'Hind Siliguri', sans-serif;
+      display: block;
+      font-size: .9em;
+      padding: 0;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .container
+    {
+      z-index: 1;
+      max-width: 1000px;
+      min-height: 600px;
+      background-color: burlywood;
+    }
+
+    .content
+    {
+      z-index: 2;
+      position: absolute;
+      top: 170px;
+      padding-left: 30px;
+      width: 90%
+    }
+
+  /******************************************
+  ************* MENU ***********************/
+  /*****************************************/
+
+
+  
+  nav{
+    overflow: hidden;
+    text-align: center;
+    margin-left: 20px;
+  } 
+
+    nav ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    nav ul li{    
+      float: left;
+      margin: 0;
+      padding: 1px;
+    }
+
+    nav ul li ul li{
+      display: none;
+      margin:0;
+      float:none;
+    }
+
+   .dropmenu:hover ul li{
+      display: block;
+      margin-top: 0px; 
+      z-index: 3;
+      cursor: pointer;
+    }
+
+    ul:after { clear: both; }
+
+
+    button.menu{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    }
+
+  button.menu span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  button.menu span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  button.menu:hover span {
+    padding-right: 25px;
+  }
+
+  button.menu:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  button.menu:active{
+
+  }
+
+  .menu.drop, .menu.drop:active{
+    border-bottom: none;
+    transform: none;
+    z-index: 3;
+    position: relative;
+  }
+
+  .menu.drop{
+    width: 90px;
+    z-index: 3;
+    position: relative;
+  }
+
+  /****************************************
+  ********* CONTENT ***********************
+  *****************************************/
+
+  .title {
     padding:10px;
-    border-bottom: 0px solid;
-	border-left: 0px solid;
-	border-right: 0px solid;
-	color: white;
-	height: 60px;
-	}
+    color: white;
+    height: 60px;
+  }
 
-.title h1 {
-  border-bottom: 2px solid #000;
-  background:#000;
-  color:#fff;
-  font-family: "Agency FB";
-  display:inline-block;
-  padding:0px 15px;
-  margin-left:10px;
-}
-.title h1:after{
-  left:0px;
-  display:block;
-  position:absolute;
-  width:100%;
-  height:3px;
-  margin-top:2px;
-  content: " ";
-  background:#000;
-}
+  .title h1 {
+    border-bottom: 2px solid #000;
+    background:#000;
+    color:#fff;
+    font-family: "Agency FB";
+    display:inline-block;
+    padding:5px 15px 0 15px;
+    margin-left:10px;
+    font-size: 1.5em;
+    font-weight: bold;
 
-#loginForm {
-	display: none;
-}
+  }
+  .title h1:after{
+    left:8px;
+    display:block;
+    position:absolute;
+    height:3px;
+    margin-top:2px;
+    content: " ";
+    background:#000;   
+    width:100%;
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
 
-#loginFormBedrijven{
-	display: none;
-}
+  #loginForm {
+    display: none;
+  }
 
-#bedrijven{
-	display: none;
-}
+  #loginFormBedrijven{
+    display: none;
+  }
+
+  #bedrijven{
+    display: none;
+  }
+
+  #btnAccountMaken{
+    display: none;
+  }
+
+  #about{
+    display: none;
+  }
+
+  /******************************************/
+  /********* Pages **************************/
+
+  .text{
+    background-color: #f9f1e0;
+    border-top: 2px solid #201500;
+    border-bottom: 2px solid #201500;
+    box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 0 120px;
+    max-width: 600px;
+  }
+
+
+
+  /******************************************/
+  /********* FORMS **************************/
+
+  div.form{
+    width: 90%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    margin:0;
+  }
+
+  label{
+      display:inline-block;
+      width: 110px;
+      padding:2px;
+      margin:5px;
+      font-size: .9em;
+      display: inline-block;
+  }
+
+  input,textarea {
+      border:1px solid #F4511E;
+      width:500px;
+      padding:5px;
+      margin-left: 20px;
+      border-radius:5px;
+      box-shadow:inset 0px 0px 10px rgba(195,64,24,0.6);
+      display: block;
+  }
+
+  .buttonContent{
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 1em;
+      padding: 5px;
+      width: 150px;
+      cursor: pointer;
+      margin: 20px 30px 15px 120px;
+      }
+
+  .buttonForm{
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 1em;
+      padding: 5px;
+      width: 150px;
+      cursor: pointer;
+      margin: 10px 30px 15px 20px;
+      }
+
+
+  /****************************************************/
+  /****************************************************/
+  /************ SHOW ALL FREE SPACES ******************/
+  /****************************************************/
+
+  .parkeerPlaatsDIV{
+    border: 1px solid black;
+    background-color: #f9f1e0;
+    width: 90%;
+    height: 150px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
+  }
+
+  .alternative_cls:nth-child(odd){
+      background-color:#ccc;
+  }
+
+  .detailsfreespace{
+    width: 150px;
+    margin-top: 20px;
+    float:left;
+  }
+
+  .parkeerPlaatsDIV p{
+    font-size: 0.8em;
+    padding:0;
+    margin:0;
+  }
+
+
+  .parkeerImage{
+    width: 120px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  .parkeerImage img{
+    width: 100%;
+  }
+
+  .buttonReserve{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: .7em;
+    padding: 5px;
+    width: 80px;
+    cursor: pointer;
+    margin: 10px 20px 15px 0px;
+    clear:both;
+    float:right;
+  }
+
+
+  button.round{
+    width: 45%;
+    height:0;
+    margin:  40px 0 0 45px;
+      padding: 35%;
+      border-radius: 50%;
+      border: 2px solid #f5f5f5;
+      overflow: hidden;
+      background: #464646;
+      box-shadow: 0 0 3px gray;
+    padding-bottom: 35%;
+    border:10px solid #cfdcec;
+      overflow:hidden;
+  }
+
+  .round:hover {
+      background: #262626;
+  }
+
+  button.round p{
+    color: white;
+    font-size: 2.2em;
+    margin: -70px 0 0 -25px;
+  }
