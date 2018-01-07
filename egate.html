@@ -20,7 +20,7 @@
 			<ul>
 				<li><button id="nuParkeren" class="menu" onClick="navigate('loginForm')"><span>Park Now!</span></button></li>
 				<li><button id="accountBedrijven" class="menu" onClick="navigate('companyWelcome')"><span>Companies</span></button></li>
-				<li class="dropmenu"><button id="overOns" class="menu" style="width:90px;" onClick="navigate('about')"><span>Over ons</span></button>
+				<li class="dropmenu"><button id="overOns" class="menu" style="width:90px;" onClick="navigate('about')"><span>About</span></button>
 					<ul>
 						<li class="drop">
 						<button id="products" class="menu drop" onClick="navigate('tutorial')"><span>Tutorial</span></button>
@@ -32,6 +32,7 @@
 				</li>
 			</ul>
 		</nav>
+
 		
 		<!-- MAKE AN ACOUNT FOR CARUSER  -->
 		<div id="accountMaken" class="content">
@@ -53,7 +54,6 @@
 			<label for="User_Password">Password</label><input type="text" id="User_password" class="formFields">
 			</br>
 			<button id="newUser" class="btnLogin buttonForm" onClick="addPersonForm()">Make my account</button><button id="cancelNewUser" class="buttonForm">Cancel</button>
-
 		</div>
 		
 		<!-- LOGIN PAGE FOR CAR USERS  -->
@@ -76,8 +76,17 @@
 				<!-- This is where the free spaces will show up in a JS loop -->
 				</div>	
 		</div>	
+
+		<!-- RESERVE A CHOSEN PARKING PLACE -->
+		<div id="reserveer" class="freespacesTable content">
+				<h1>Your reservation was succesful!</h1>
+	
+			<!-- ENTER THE PARKGINSPACE -->
 			
+				<button id="getMyQr" class="round" onClick="QRcode(true)"><p>Get my<br />Code</p></button>
+			</div>	
 			
+		</div>		
 			
 		<!-- WELCOME PAGE FOR COMPANIES  -->	
 			<div id="companyWelcome" class="content">
@@ -106,8 +115,8 @@
 			<div id="loginFormBedrijven" class="content">
 				<h1>Login Companies</h1>
 				<label for="fullname">Username</label><input type="text" id="companyName" class="formFields">
-				<label for="phone">Password</label><input type="text" id="companyPassword" class="formFields">
-				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Add</button>
+				<label for="phone">Password</label><input type="password" id="companyPassword" class="formFields">
+				<button id="loginUser" class="buttonForm" onClick="companyLogin()">Login</button>
 			</div>
 		
 
@@ -136,7 +145,7 @@
 			<p>E-Gate is located in Groningen, the Netherlands. For any information or comments, please contact us at:</p>
 		<!-- Contact formulier  -->
  
-			<form name="contactform" enctype="multipart/form-data" method="post" action="./include/sendMail.php">
+			<form name="contactform" enctype="multipart/form-data" method="post" action="./sendMail.php">
 			  <label for="firstname">First Name</label>
 			  <input type="text" id="firstname" name="firstname" placeholder="Your first name"/>
 			  <label for="lastname">Last Name</label>
@@ -145,7 +154,8 @@
 			  <input type="text" id="email" name="email" placeholder="Your e-mail adress"/>      
 			  <label for="message">Your message</label>
 			  <textarea id="message" name="message" placeholder="Your message" style="height:200px;"></textarea>
-			  <input type="submit" name="submit" value="submit">
+			  <input type="submit" name="submit" class="buttonContent" value="submit">
+
 			</form>
 	
 		</div>
@@ -158,5 +168,6 @@
 	<script type="text/javascript" src="javascript/EgateNavigation.js"></script>
 	<script type="text/javascript" src="javascript/EgateLogin.js"></script>
 	<script type="text/javascript" src="javascript/EgateParkeerPlaatsen.js"></script>
+  <script typ="text/javascript" src="javascript/EgateQRcode.js"></script>
 
 </html>
