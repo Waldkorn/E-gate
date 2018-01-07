@@ -23,7 +23,7 @@ function login() {
 	var password = document.getElementById("userpassword").value;
 
 	if (username == admin.username && password == admin.password) {
-		getAccess();
+		navigate("freeSpaces");
 	} else {
 		alert("The username and/or password is not correct");
 	}
