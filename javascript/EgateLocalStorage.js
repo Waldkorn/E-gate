@@ -35,6 +35,32 @@ function addUser(username, firstname, lastname, email, address, zipcode, city, p
 	localStorage['users'] = JSON.stringify(users);
 }
 
+//addUser functie voor de onclick zodat de html niet cluttered raakt.
+function addPersonForm() {
+	var username = document.getElementById("username").value;
+	var firstname = document.getElementById("User_firstname").value;
+	var lastname = document.getElementById("User_lastname").value;
+	var email = document.getElementById("User_email").value;
+	var address = document.getElementById("User_address").value;
+	var zipcode = document.getElementById("User_zipcode").value;
+	var city = document.getElementById("User_city").value;
+	var password = document.getElementById("User_password").value;
+
+	addUser(username, firstname, lastname, email, address, zipcode, city, password);
+
+	alert("User succesfully added");
+
+	navigate("loginForm")
+
+	var fields = document.getElementById("accountMaken").childNodes;
+
+	for (i = 0; i < fields.length; i++) {
+		fields[i].value = "";
+	}
+}
+
+//addUser("Waldkorn", "Ewout", "Eggens", "ewouteggens@hotmail.com", "Damsport 19", "9728 PP", "Groningen", "Waldiboy");
+
 //aanmaak van de array met company objects
 var companies = [];
 
@@ -59,4 +85,23 @@ function addCompany(companyName, parkingSystem, password) {
 	var addition = new Company(companyName, parkingSystem, password);
 	companies.push(addition);
 	localStorage['companies'] = JSON.stringify(companies);
+}
+
+
+
+//de onclick functie voor de form
+function addCompanyForm() {
+	var companyName = document.getElementById("bedrijfsnaam").value;
+	var parkingSystem = document.getElementById("parkeerSysteem").value;
+	var password = document.getElementById("companyFormPassword").value;
+
+	addCompany(companyName, parkingSystem, password);
+
+	alert("Company succesfully added");
+
+	var fields = document.getElementById("btnAccountMaken").childNodes;
+
+	for (i = 0; i < fields.length; i++) {
+		fields[i].value = "";
+	}
 }
