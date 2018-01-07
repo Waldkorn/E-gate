@@ -297,3 +297,32 @@ input,textarea {
 	transform: translate(0px,5px);
   	-webkit-transform: translate(0px,5px);
 	}
+
+	/****************************************************/
+/****************************************************/
+/************ SHOW ALL FREE SPACES ******************/
+/****************************************************/
+
+.parkeerPlaatsDIV{
+	clear: both;
+}
+
+
+.alternative_cls:nth-child(1), .alternative_cls:nth-child(even){
+    background:#ccc;
+}
+
+.parkeerPlaatsNaam{
+
+}
+
+.parkeerPlaatsLocatie{
+
+}
+.parkeerPlaatsCapaciteit{
+
+}
+.parkeerImage{
+
+}
+	
