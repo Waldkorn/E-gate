@@ -7,10 +7,14 @@ CodeGorilla project van groep E-gate.
 
 <p>Teammembers: Edwin, Eric, Esmaralda, Eelke en Ewout</p>
 
-<img src="/NieuweScreenshots/hackatonjanuari2018.jpg" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotCompaniesHome.png" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotLoginAutomobilist.png" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotGetmycode.png" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotGetmycode.png" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotContact.png" alt="screenshot">
-<img src="/NieuweScreenshots/screenshotAboutUs.png" alt="screenshot">
+<img src="/NieuweScreenshots/hackatonjanuari2018.jpg" alt="screenshot" width="400px">
+<img src="/NieuweScreenshots/EGate1.png" alt="photo of team E-Gate" width="300px">
+<img src="/NieuweScreenshots/EGate2.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate3.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate4.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate5.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate6.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate7.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate8.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate9.png" alt="screenshot" width="300px">
+<img src="/NieuweScreenshots/EGate10.png" alt="screenshot" width="300px">
