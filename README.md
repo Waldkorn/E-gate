@@ -7,10 +7,10 @@ CodeGorilla project van groep E-gate.
 
 <p>Teammembers: Edwin, Eric, Esmaralda, Eelke en Ewout</p>
 
-<img src="/images/hackatonjanuari2018.jpg" alt="screenshot">
-<img src="/images/screenshotCompaniesHome.png" alt="screenshot">
-<img src="/images/screenshotLoginAutomobilist.png" alt="screenshot">
-<img src="/images/screenshotGetmycode.png" alt="screenshot">
-<img src="/images/screenshotGetmycode.png" alt="screenshot">
-<img src="/images/screenshotContact.png" alt="screenshot">
-<img src="/images/screenshotAboutUs.png" alt="screenshot">
+<img src="/NieuweScreenshots/hackatonjanuari2018.jpg" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotCompaniesHome.png" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotLoginAutomobilist.png" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotGetmycode.png" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotGetmycode.png" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotContact.png" alt="screenshot">
+<img src="/NieuweScreenshots/screenshotAboutUs.png" alt="screenshot">
